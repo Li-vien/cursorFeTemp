@@ -12,5 +12,9 @@ Cursor系列教程，一步步搭建一个通用项目模板。使用Cursor创�
 
 ## 2. 加载项目基础
 1. 下载代码包或者 ```git clone https://github.com/Li-vien/cursorFeTemp.git```
-2. 切换到 Cursor Chat： 安装依赖
+2. 切换到 Cursor Chat： 安装依赖  
+3. Chat： 启动项目
+
+
+
 ## 3. 启动项目

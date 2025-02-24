@@ -1,13 +1,8 @@
 ---
 description: 
-globs: 
+globs: *.vue,*.js
 alwaysApply: false
 ---
-// 全局
-- 使用pnpm
-
-
-
 // 代码风格和结构
 - 使用函数式、声明式编程模式
 - 优先使用迭代和模块化，避免代码重复
@@ -51,8 +46,3 @@ alwaysApply: false
 - 提交信息格式：chore: 其他
 - 提交信息简明扼要，20字以内
 - 提交信息使用中文
-
-
-// 快捷指令
-- 当输入 运行项目 时，执行pnpm dev
-- 当输入 安装依赖 时，执行pnpm install

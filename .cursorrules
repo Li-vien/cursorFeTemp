@@ -1,0 +1,6 @@
+Always respond in 中文
+// 快捷指令
+- 当输入 运行项目 时，执行pnpm dev
+- 当输入 安装依赖 时，执行pnpm install
+// 全局
+- 使用pnpm不要使用npm

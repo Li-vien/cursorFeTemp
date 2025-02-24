@@ -1,0 +1,8 @@
+---
+description: 
+globs: *.vue,*.js,*.less,*.sass,*.html
+alwaysApply: false
+---
+// UI 和样式
+- 不在组件中使用font-family
+- 使用 Figma 的 Inspect 面板查看具体的样式值

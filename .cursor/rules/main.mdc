@@ -1,0 +1,9 @@
+---
+description: 
+globs: *.*
+alwaysApply: false
+---
+[vue-rules.mdc](mdc:.cursor/rules/vue-rules.mdc)
+[git-rules.mdc](mdc:.cursor/rules/git-rules.mdc)
+[style-rules.mdc](mdc:.cursor/rules/style-rules.mdc)
+[global.mdc](mdc:.cursor/rules/global.mdc)

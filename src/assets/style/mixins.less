@@ -1,0 +1,93 @@
+// 弹性布局
+.flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column() {
+  display: flex;
+  flex-direction: column;
+}
+
+// 文本溢出处理
+.text-ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.multi-line-ellipsis(@lines: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: @lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// 响应式媒体查询
+.respond-to(@breakpoint) {
+  @media (max-width: @breakpoint) {
+    @content();
+  }
+}
+
+// 清除浮动
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// 卡片样式
+.card-style() {
+  border: 1px solid @border-color;
+  border-radius: @border-radius-md;
+  padding: @spacing-xl;
+  background-color: @background-light;
+  transition: @transition-normal;
+}
+
+// 按钮样式
+.button-base() {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: @border-radius-circle;
+  font-family: @font-merriweather;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17.6px;
+  cursor: pointer;
+  transition: @transition-normal;
+}
+
+.primary-button() {
+  .button-base();
+  background-color: @primary-color;
+  color: @background-light;
+  border: none;
+  
+  &:hover {
+    background-color: @hover-dark;
+  }
+}
+
+.secondary-button() {
+  .button-base();
+  background-color: transparent;
+  color: @primary-color;
+  border: 1px solid @border-color;
+  
+  &:hover {
+    background-color: rgba(44, 44, 44, 0.05);
+  }
+} 

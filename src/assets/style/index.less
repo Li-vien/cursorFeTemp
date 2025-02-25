@@ -1,0 +1,74 @@
+// 导入变量和混合
+@import './variables.less';
+@import './mixins.less';
+@import './loadFont.less';
+
+// 全局样式
+body {
+  margin: 0;
+  padding: 0;
+  font-family: @font-sf-pro-text;
+  color: @primary-color;
+  background-color: @background-light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: @font-merriweather;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+input, textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+// 通用容器
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 @spacing-xl;
+  
+  @media (max-width: @screen-sm) {
+    padding: 0 @spacing-md;
+  }
+}
+
+// 通用卡片
+.card {
+  .card-style();
+}
+
+// 通用按钮
+.btn-primary {
+  .primary-button();
+  padding: 11px @spacing-xl;
+}
+
+.btn-secondary {
+  .secondary-button();
+  padding: 11px @spacing-xl;
+} 

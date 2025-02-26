@@ -11,6 +11,7 @@ alwaysApply: false
 - 方法优先使用 function 关键字，计算属性使用箭头函数配合 const
 - 优先使用 defineModel 宏创建双向绑定
 - 使用简洁的 defineEmits 语法（如 change: [id: number]）
+- 简化组件创建，不创建过多组件
 
 // UI 和样式
 - 不在组件中使用font-family

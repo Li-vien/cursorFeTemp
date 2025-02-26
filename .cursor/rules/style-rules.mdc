@@ -6,3 +6,10 @@ alwaysApply: false
 // UI 和样式
 - 不在组件中使用font-family
 - 使用 Figma 的 Inspect 面板查看具体的样式值
+
+
+// figma
+- 优先使用已有的资源，设计中取到图片就优先使用图片
+- 不要将读取到的内容做格式转换
+- 不要将image转为svg
+- 基于figma设计时，不要发散，严格按照设计稿样式还原

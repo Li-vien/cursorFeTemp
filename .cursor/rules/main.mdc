@@ -3,7 +3,61 @@ description:
 globs: *.*
 alwaysApply: false
 ---
-[vue-rules.mdc](mdc:.cursor/rules/vue-rules.mdc)
-[git-rules.mdc](mdc:.cursor/rules/git-rules.mdc)
-[style-rules.mdc](mdc:.cursor/rules/style-rules.mdc)
-[global.mdc](mdc:.cursor/rules/global.mdc)
+Always respond in 中文
+
+// 代码风格和结构
+- 使用函数式、声明式编程模式
+- 优先使用迭代和模块化，避免代码重复
+- 使用描述性的变量名，包含助动词（如 isLoading、hasError）
+- 系统地组织文件：每个文件只包含相关内容，如导出组件、子组件、辅助函数、静态内容和类型
+- 目录使用小写字母和破折号（如 components/auth-wizard）
+- 优先使用命名导出函数
+- 使用 function 关键字定义纯函数，以获得提升和清晰度优势
+- 函数参数优先使用接收对象、返回对象（RORO）模式
+- 简单条件语句优先使用单行语法（如 if (condition) doSomething()）
+- 所有代码使用 TypeScript，优先使用接口而非类型，避免使用枚举，使用映射代替以获得更好的类型安全性和灵活性
+
+// 错误处理和验证
+- 在函数开始时处理错误和边缘情况
+- 使用提前返回处理错误条件，避免深层嵌套的 if 语句
+- 使用守卫子句提前处理前置条件和无效状态
+- 避免不必要的 else 语句，使用 if-return 模式代替
+- 实现适当的错误日志记录和用户友好的错误消息
+- 考虑使用自定义错误类型或错误工厂确保一致的错误处理
+
+// GIT
+- 提交前使用 git add . 添加所有文件
+- 提交信息格式：feat: 新增功能
+- 提交信息格式：fix: 修复问题
+- 提交信息格式：refactor: 重构代码
+- 提交信息格式：style: 调整样式
+- 提交信息格式：test: 添加测试
+- 提交信息格式：chore: 其他
+- 提交信息简明扼要，20字以内
+- 提交信息使用中文
+
+// figma
+- 不要将读取到的内容做格式转换
+- 不要将figma的image节点转为svg，直接下载image节点图片到本地
+- 基于figma设计时，不要发散，严格按照设计稿样式还原
+
+// UI 和样式
+- 不在组件中使用font-family
+- 使用 Figma 的 Inspect 面板查看具体的样式值
+
+// Vue.js
+- 永远不要使用typescript或者创建ts文件，使用js文件
+- 不要使用lang=“ts”
+- 始终使用 Vue 组合式 API 的 script setup 风格
+- 适时使用 VueUse 函数以提升响应性和性能
+- 方法优先使用 function 关键字，计算属性使用箭头函数配合 const
+- 优先使用 defineModel 宏创建双向绑定
+- 使用简洁的 defineEmits 语法（如 change: [id: number]）
+- 简化组件创建，不创建过多组件
+- 如果组件不满足设计稿的要求，则对特殊部分新建组件实现
+
+// UI 和样式
+- 不在组件中使用font-family
+- 使用 Figma 的 Inspect 面板查看具体的样式值
+
+
